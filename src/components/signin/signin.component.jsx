@@ -35,10 +35,10 @@ const SignIn = () => {
           <FormInput />
         </SignInBtm>
         <AuthBtn xs={12}> Sign In</AuthBtn>
+        <AuthNav onClick={() => Navigate("signup")}>
+          Don't have an account? Sign up
+        </AuthNav>
       </SignInFormContainer>
-      <AuthNav onClick={() => Navigate("signup")}>
-        Don't have an account? Sign up
-      </AuthNav>
     </SignInContainer>
   );
 };

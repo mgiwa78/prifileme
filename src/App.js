@@ -19,7 +19,7 @@ function App() {
         <div className="App">
           <Nav />
           <Routes>
-            <Route index element={<AppLanding />} />
+            <Route path="/" element={<AppLanding />} />
             <Route path="auth" element={<SignInSignUp />}>
               <Route index element={<SignIn />} />
               <Route path="signup" element={<SignUp />} />

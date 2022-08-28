@@ -8,17 +8,20 @@ export const SignUpContainer = styled(Container)`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px 0;
+
   justify-content: space-around;
 `;
 
 export const SignUpFormContainer = styled.div`
   max-width: 90vw;
   display: flex;
-  padding: 40px 30px 60px 30px;
+  padding: 40px 20px 60px 20px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #fff;
+  position: relative;
 `;
 export const SignUpTitle = styled.h3`
   font-size: 27px;
@@ -72,7 +75,7 @@ export const AuthNav = styled.span`
   margin-top: 20px;
   font-weight: 600;
   position: absolute;
-  bottom: 100px;
+  bottom: 10px;
   cursor: pointer;
 `;
 export const AuthBtn = styled(Col)`

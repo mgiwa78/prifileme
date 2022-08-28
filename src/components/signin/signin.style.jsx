@@ -9,6 +9,7 @@ export const SignInContainer = styled(Container)`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  padding: 20px 0;
 `;
 
 export const SignInFormContainer = styled.div`
@@ -19,6 +20,7 @@ export const SignInFormContainer = styled.div`
   align-items: center;
   justify-content: center;
   background-color: #fff;
+  position: relative;
 `;
 export const SignInTitle = styled.h3`
   font-size: 27px;
@@ -72,7 +74,7 @@ export const AuthNav = styled.span`
   margin-top: 20px;
   font-weight: 600;
   position: absolute;
-  bottom: 100px;
+  bottom: 10px;
   cursor: pointer;
 `;
 

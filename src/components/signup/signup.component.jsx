@@ -40,10 +40,10 @@ const SignUp = () => {
           <FormInput />
         </SignUpBtm>
         <AuthBtn xs={12}> Sign Up</AuthBtn>
+        <AuthNav onClick={() => Navigate("/auth")}>
+          Already have an account? Sign in
+        </AuthNav>
       </SignUpFormContainer>
-      <AuthNav onClick={() => Navigate("/auth")}>
-        Already have an account? Sign in
-      </AuthNav>
     </SignUpContainer>
   );
 };
