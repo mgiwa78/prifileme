@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   NavBox,
   NavBtn,
@@ -11,14 +11,15 @@ import {
 } from "./nav.styles";
 import Mlogo from "../../assets/menu.svg";
 const Nav = () => {
+  const Navigate = useNavigate();
   return (
     <NavContainer>
       <NavBox>
         <NavMenu src={Mlogo}></NavMenu>
-        <NavLogo>ProfileMe</NavLogo>
+        <NavLogo onClick={() => Navigate("/")}>Profileme</NavLogo>
       </NavBox>
       <NavBox>
-        <NavBtn>Login</NavBtn>
+        <NavBtn onClick={() => Navigate("/signIn")}>Login</NavBtn>
       </NavBox>
     </NavContainer>
   );
