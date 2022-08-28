@@ -23,7 +23,7 @@ export const NavBtn = styled.div`
 `;
 export const NavItem = styled.li``;
 export const NavLogo = styled.span`
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 700;
   margin-left: 8px;
   color: #009688;

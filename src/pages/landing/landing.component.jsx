@@ -18,7 +18,7 @@ const AppLanding = () => {
         <LandingBody>
           <LandingText>
             Find a skilled <br />
-            <span className="landing_highlight">employee </span>
+            <span className="landing_highlight">employee</span>
             anywhere everywhere
           </LandingText>
           <LandingImg src={LSvg}></LandingImg>

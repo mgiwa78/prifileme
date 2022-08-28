@@ -25,6 +25,8 @@ export const LandingText = styled.h2`
     background-color: #009688 !important;
     color: white !important;
     text-transform: capitalize;
+    padding: 0 5px;
+    margin-right: 8px;
   }
 `;
 export const LandingImg = styled.img`
