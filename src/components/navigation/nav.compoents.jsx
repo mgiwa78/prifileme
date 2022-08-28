@@ -19,7 +19,7 @@ const Nav = () => {
         <NavLogo onClick={() => Navigate("/")}>Profileme</NavLogo>
       </NavBox>
       <NavBox>
-        <NavBtn onClick={() => Navigate("/signIn")}>Login</NavBtn>
+        <NavBtn onClick={() => Navigate("/auth")}>Login</NavBtn>
       </NavBox>
     </NavContainer>
   );

@@ -20,10 +20,11 @@ export const NavBtn = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 2px;
+  cursor: pointer;
 `;
 export const NavItem = styled.li``;
 export const NavLogo = styled.span`
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   margin-left: 8px;
   color: #009688;

@@ -7,15 +7,15 @@ export const LandingContainer = styled.div`
 `;
 export const LandingBody = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
   align-content: center;
   flex-direction: column;
-  padding-top: 40px;
+  padding-top: 80px;
+  min-height: calc(100vh - 76px);
 `;
 
 export const LandingText = styled.h2`
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 600;
   max-height: 80vw;
   padding: 0 20px;

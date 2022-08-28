@@ -7,22 +7,27 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { LandingContainer } from "./pages/landing/landing.styles";
 import Nav from "./components/navigation/nav.compoents";
 import SignInSignUp from "./pages/signin-signup/signin-signup.component";
+import SignIn from "./components/signin/signin.component";
+import SignUp from "./components/signup/signup.component";
 function App() {
   return (
-    <BrowserRouter>
-      <ThemeProvider
-        breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xs"]}
-        minBreakpoint="xs"
-      >
+    <ThemeProvider
+      breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xs"]}
+      minBreakpoint="xs"
+    >
+      <BrowserRouter>
         <div className="App">
           <Nav />
           <Routes>
-            <Route path="/" element={<AppLanding />}></Route>
-            <Route path="signIn" element={<SignInSignUp />}></Route>
+            <Route index element={<AppLanding />} />
+            <Route path="auth" element={<SignInSignUp />}>
+              <Route index element={<SignIn />} />
+              <Route path="signup" element={<SignUp />} />
+            </Route>
           </Routes>
         </div>{" "}
-      </ThemeProvider>
-    </BrowserRouter>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
