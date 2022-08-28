@@ -15,7 +15,8 @@ function App() {
       breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xs"]}
       minBreakpoint="xs"
     >
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        {/* <BrowserRouter> */}
         <div className="App">
           <Nav />
           <Routes>
